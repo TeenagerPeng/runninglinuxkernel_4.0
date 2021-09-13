@@ -1,0 +1,1 @@
+cmd_/home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello_module.mod := { echo  /home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello.o;  echo; } > /home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello_module.mod

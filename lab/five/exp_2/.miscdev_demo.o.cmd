@@ -1,0 +1,1 @@
+cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_2/miscdev_demo.o := aarch64-linux-gnu-ld -EL    -r -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_2/miscdev_demo.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_2/demo_miscdev.o 

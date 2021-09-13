@@ -1,0 +1,1 @@
+cmd_/home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello_module.o := ld -m elf_x86_64  -z max-page-size=0x200000    -r -o /home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello_module.o /home/mi/work/linux-kernel/runninglinuxkernel_4.0/experiment/four/hello.o

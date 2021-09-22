@@ -1,8 +1,8 @@
-cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/.demo_nonblock.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/5/include -I./arch/arm64/include -Iarch/arm64/include/generated/uapi -Iarch/arm64/include/generated  -Iinclude -I./arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -mgeneral-regs-only -fno-delete-null-pointer-checks -O0 --param=allow-store-data-races=0 -Wframe-larger-than=4096 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(demo_nonblock)"  -D"KBUILD_MODNAME=KBUILD_STR(nonblock_demo)" -c -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/.tmp_demo_nonblock.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.c
+cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/.demo_poll.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/5/include -I./arch/arm64/include -Iarch/arm64/include/generated/uapi -Iarch/arm64/include/generated  -Iinclude -I./arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -mgeneral-regs-only -fno-delete-null-pointer-checks -O0 --param=allow-store-data-races=0 -Wframe-larger-than=4096 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(demo_poll)"  -D"KBUILD_MODNAME=KBUILD_STR(poll_demo)" -c -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/.tmp_demo_poll.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.c
 
-source_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.c
+source_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o := /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.c
 
-deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
+deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o := \
   include/linux/miscdevice.h \
   include/uapi/linux/major.h \
   include/linux/list.h \
@@ -696,7 +696,11 @@ deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
     $(wildcard include/config/no/generic/pci/ioport/map.h) \
     $(wildcard include/config/generic/pci/iomap.h) \
   include/linux/vmalloc.h \
+  include/linux/poll.h \
+  include/uapi/linux/poll.h \
+  arch/arm64/include/generated/asm/poll.h \
+  include/uapi/asm-generic/poll.h \
 
-/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o: $(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o)
+/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o: $(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o)
 
-$(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o):
+$(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/demo_poll.o):

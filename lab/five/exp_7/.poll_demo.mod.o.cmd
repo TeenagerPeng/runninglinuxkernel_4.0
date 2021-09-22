@@ -1,10 +1,24 @@
-cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/.demo_nonblock.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/5/include -I./arch/arm64/include -Iarch/arm64/include/generated/uapi -Iarch/arm64/include/generated  -Iinclude -I./arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -mgeneral-regs-only -fno-delete-null-pointer-checks -O0 --param=allow-store-data-races=0 -Wframe-larger-than=4096 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(demo_nonblock)"  -D"KBUILD_MODNAME=KBUILD_STR(nonblock_demo)" -c -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/.tmp_demo_nonblock.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.c
+cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o := aarch64-linux-gnu-gcc -Wp,-MD,/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/.poll_demo.mod.o.d  -nostdinc -isystem /usr/lib/gcc-cross/aarch64-linux-gnu/5/include -I./arch/arm64/include -Iarch/arm64/include/generated/uapi -Iarch/arm64/include/generated  -Iinclude -I./arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -mgeneral-regs-only -fno-delete-null-pointer-checks -O0 --param=allow-store-data-races=0 -Wframe-larger-than=4096 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(poll_demo.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(poll_demo)" -DMODULE  -c -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.c
 
-source_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.c
+source_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o := /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.c
 
-deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
-  include/linux/miscdevice.h \
-  include/uapi/linux/major.h \
+deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o := \
+    $(wildcard include/config/module/unload.h) \
+  include/linux/module.h \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/module/sig.h) \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/tracepoints.h) \
+    $(wildcard include/config/tracing.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/ftrace/mcount/record.h) \
+    $(wildcard include/config/livepatch.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/list.h \
     $(wildcard include/config/debug/list.h) \
   include/linux/types.h \
@@ -48,21 +62,16 @@ deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/panic/timeout.h) \
     $(wildcard include/config/ring/buffer.h) \
-    $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/ftrace/mcount/record.h) \
   /usr/lib/gcc-cross/aarch64-linux-gnu/5/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
-    $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/unused/symbols.h) \
   arch/arm64/include/asm/linkage.h \
   include/linux/bitops.h \
   arch/arm64/include/asm/bitops.h \
   arch/arm64/include/asm/barrier.h \
-    $(wildcard include/config/smp.h) \
   include/asm-generic/bitops/builtin-__ffs.h \
   include/asm-generic/bitops/builtin-ffs.h \
   include/asm-generic/bitops/builtin-__fls.h \
@@ -107,17 +116,6 @@ deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
   arch/arm64/include/asm/cachetype.h \
   arch/arm64/include/asm/cputype.h \
   include/linux/dynamic_debug.h \
-  include/linux/module.h \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/livepatch.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/stat.h \
   arch/arm64/include/asm/stat.h \
     $(wildcard include/config/compat.h) \
@@ -589,114 +587,9 @@ deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/fs.h \
-    $(wildcard include/config/fs/posix/acl.h) \
-    $(wildcard include/config/ima.h) \
-    $(wildcard include/config/fsnotify.h) \
-    $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/quota.h) \
-    $(wildcard include/config/fs/dax.h) \
-  include/linux/kdev_t.h \
-  include/uapi/linux/kdev_t.h \
-  include/linux/dcache.h \
-  include/linux/rculist_bl.h \
-  include/linux/list_bl.h \
-  include/linux/lockref.h \
-    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
-  include/linux/path.h \
-  include/linux/list_lru.h \
-  include/linux/radix-tree.h \
-  include/linux/semaphore.h \
-  include/uapi/linux/fiemap.h \
-  include/linux/migrate_mode.h \
-  include/linux/percpu-rwsem.h \
-  include/linux/blk_types.h \
-    $(wildcard include/config/blk/cgroup.h) \
-    $(wildcard include/config/blk/dev/integrity.h) \
-  include/uapi/linux/fs.h \
-  include/uapi/linux/limits.h \
-  include/uapi/linux/ioctl.h \
-  arch/arm64/include/generated/asm/ioctl.h \
-  include/asm-generic/ioctl.h \
-  include/uapi/asm-generic/ioctl.h \
-  include/linux/quota.h \
-    $(wildcard include/config/quota/netlink/interface.h) \
-  include/uapi/linux/dqblk_xfs.h \
-  include/linux/dqblk_v1.h \
-  include/linux/dqblk_v2.h \
-  include/linux/dqblk_qtree.h \
-  include/linux/projid.h \
-  include/uapi/linux/quota.h \
-  include/linux/nfs_fs_i.h \
-  include/linux/fcntl.h \
-  include/uapi/linux/fcntl.h \
-  arch/arm64/include/uapi/asm/fcntl.h \
-  include/uapi/asm-generic/fcntl.h \
-  include/linux/uaccess.h \
-  arch/arm64/include/asm/uaccess.h \
-  arch/arm64/include/asm/compiler.h \
-  include/linux/cdev.h \
-  include/linux/device.h \
-    $(wildcard include/config/debug/devres.h) \
-    $(wildcard include/config/acpi.h) \
-    $(wildcard include/config/pinctrl.h) \
-    $(wildcard include/config/dma/cma.h) \
-    $(wildcard include/config/devtmpfs.h) \
-    $(wildcard include/config/sysfs/deprecated.h) \
-  include/linux/ioport.h \
-  include/linux/klist.h \
-  include/linux/pinctrl/devinfo.h \
-    $(wildcard include/config/pm.h) \
-  include/linux/pm.h \
-    $(wildcard include/config/vt/console/sleep.h) \
-    $(wildcard include/config/pm/clk.h) \
-    $(wildcard include/config/pm/generic/domains.h) \
-  include/linux/ratelimit.h \
-  arch/arm64/include/asm/device.h \
-    $(wildcard include/config/iommu/api.h) \
-  include/linux/pm_wakeup.h \
-  include/linux/slab.h \
-    $(wildcard include/config/slab/debug.h) \
-    $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/slab.h) \
-    $(wildcard include/config/slub.h) \
-    $(wildcard include/config/slob.h) \
-  include/linux/kmemleak.h \
-    $(wildcard include/config/debug/kmemleak.h) \
-  include/linux/kasan.h \
-    $(wildcard include/config/kasan/shadow/offset.h) \
-  include/linux/kfifo.h \
-  include/linux/scatterlist.h \
-    $(wildcard include/config/debug/sg.h) \
-    $(wildcard include/config/arch/has/sg/chain.h) \
-  arch/arm64/include/generated/asm/scatterlist.h \
-  include/asm-generic/scatterlist.h \
-    $(wildcard include/config/need/sg/dma/length.h) \
-  arch/arm64/include/asm/io.h \
-  arch/arm64/include/generated/asm/early_ioremap.h \
-  include/asm-generic/early_ioremap.h \
-    $(wildcard include/config/generic/early/ioremap.h) \
-  arch/arm64/include/asm/alternative.h \
-  arch/arm64/include/asm/cpufeature.h \
-  include/xen/xen.h \
-    $(wildcard include/config/xen.h) \
-    $(wildcard include/config/xen/dom0.h) \
-    $(wildcard include/config/xen/pvh.h) \
-  include/xen/interface/xen.h \
-  arch/arm64/include/asm/xen/interface.h \
-  arch/arm64/include/../../arm/include/asm/xen/interface.h \
-  arch/arm64/include/asm/xen/hypervisor.h \
-  arch/arm64/include/../../arm/include/asm/xen/hypervisor.h \
-  include/asm-generic/io.h \
-    $(wildcard include/config/generic/iomap.h) \
-    $(wildcard include/config/has/ioport/map.h) \
-    $(wildcard include/config/virt/to/bus.h) \
-  include/asm-generic/pci_iomap.h \
-    $(wildcard include/config/pci.h) \
-    $(wildcard include/config/no/generic/pci/ioport/map.h) \
-    $(wildcard include/config/generic/pci/iomap.h) \
-  include/linux/vmalloc.h \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
 
-/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o: $(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o)
+/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o: $(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o)
 
-$(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/demo_nonblock.o):
+$(deps_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_7/poll_demo.mod.o):

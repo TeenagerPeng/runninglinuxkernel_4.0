@@ -62,7 +62,7 @@ static ssize_t
 demodrv_write(struct file *file, const char __user *buf, size_t count, loff_t *ppos) {
     unsigned int actual_write;
     int ret;
-    if (kfifo_is_empty(&kfifo_buffer)) {
+    if (kfifo_is_full(&kfifo_buffer)) {
         if (file->f_flags & O_NONBLOCK) {
             return -EAGAIN;
         }

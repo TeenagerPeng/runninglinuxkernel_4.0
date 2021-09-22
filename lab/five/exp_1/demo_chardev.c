@@ -45,20 +45,22 @@ static const struct file_operations demodrv_fops = {
 
 static int __init simple_char_init(void) {
     int ret;
+    //1. 分配设备号
     ret = alloc_chrdev_region(&dev, 0, count, DEV_NAME);
     if (ret) {
         printk("failed to allocate char device region");
         return ret;
     }
-
+    //2. 分配cdev结构体
     demo_cdev = cdev_alloc();
     if (!demo_cdev) {
         printk("cdev_alloc failed \n");
         goto unregister_chrdev;
     }
-
+    //3. 初始化cdev结构体,将操作函数加入到设备中
     cdev_init(demo_cdev, &demodrv_fops);
     
+    //4. 添加结构体到设备中
     ret = cdev_add(demo_cdev, dev, count);
 
     if (ret) {

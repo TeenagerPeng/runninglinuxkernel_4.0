@@ -15,7 +15,7 @@ int main() {
 
     printf("len = %d", len);
 
-    fd = open(DEV_NAME, O_RDWR);
+    fd = open(DEV_NAME, O_RDWR | O_NONBLOCK);
     if (fd < 0) {
         printf("open dev %s failed!!!\n", DEV_NAME);
         return -1;
@@ -32,7 +32,17 @@ int main() {
     //1. write message to device
     ret = write(fd, message, len);
     if (ret != len) {
-        printf("write device %d failed ret = %d\n", fd, ret);
+        printf("write device %d failed ret1 = %d\n", fd, ret);
+        return -1;
+    }
+    ret = write(fd, message, len);
+    if (ret != len) {
+        printf("write device %d failed ret2 = %d\n", fd, ret);
+        return -1;
+    }
+    ret = write(fd, message, len);
+    if (ret != len) {
+        printf("write device %d failed ret3 = %d\n", fd, ret);
         return -1;
     }
     //close(fd);

@@ -1,1 +1,0 @@
-cmd_/root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.ko /root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.o /root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.mod.o

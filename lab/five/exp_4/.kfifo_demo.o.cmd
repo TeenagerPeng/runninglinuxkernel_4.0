@@ -1,1 +1,0 @@
-cmd_/root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.o := aarch64-linux-gnu-ld -EL    -r -o /root/github/runninglinuxkernel_4.0/lab/five/exp_4/kfifo_demo.o /root/github/runninglinuxkernel_4.0/lab/five/exp_4/demo_kfifo.o 

@@ -68,4 +68,4 @@ module_exit(get_pages_exit);
 
 MODULE_AUTHOR("Peng Jinghui");
 MODULE_LICENSE("GPL v2");
-MODULE_DESCRIPTION("demo_chardev");
+MODULE_DESCRIPTION("get pages");

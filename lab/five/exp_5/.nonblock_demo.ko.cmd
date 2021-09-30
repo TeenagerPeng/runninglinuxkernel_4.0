@@ -1,1 +1,0 @@
-cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/nonblock_demo.ko := aarch64-linux-gnu-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/nonblock_demo.ko /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/nonblock_demo.o /home/mi/github/runninglinuxkernel_4.0/lab/five/exp_5/nonblock_demo.mod.o

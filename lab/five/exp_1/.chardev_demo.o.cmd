@@ -1,1 +1,0 @@
-cmd_/home/mi/github/runninglinuxkernel_4.0/lab/five/5_1/chardev_demo.o := aarch64-linux-gnu-ld -EL    -r -o /home/mi/github/runninglinuxkernel_4.0/lab/five/5_1/chardev_demo.o /home/mi/github/runninglinuxkernel_4.0/lab/five/5_1/demo_chardev.o 
